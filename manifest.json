@@ -6,8 +6,8 @@
         ]
     },
     "header": {
-        "name": "URL Image Fix [RP]",
-        "description": "Resource Pack for fixing URL images in action forms",
+        "name": "SAPI with URL Images [RP]",
+        "description": "Resource Pack for fixing URL images in Action forms when using Script API.",
         "uuid": "01a183ae-aee4-759f-8563-43eb03bc802f",
         "pack_scope": "world",
         "min_engine_version": [
