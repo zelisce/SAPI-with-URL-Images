@@ -1,0 +1,35 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": [
+            "zelisce"
+        ]
+    },
+    "header": {
+        "name": "URL Image Fix [RP]",
+        "description": "Resource Pack for fixing URL images in action forms",
+        "uuid": "01a183ae-aee4-759f-8563-43eb03bc802f",
+        "pack_scope": "world",
+        "min_engine_version": [
+            1,
+            21,
+            100
+        ],
+        "version": [
+            1,
+            0,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "01a183ae-90dd-715b-987e-93119d4d3fb1",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

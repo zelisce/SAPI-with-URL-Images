@@ -1,0 +1,51 @@
+{
+   "dynamic_button/panel_name": {
+      "size": [
+         34,
+         32
+      ],
+      "modifications": [
+         {
+            "array_name": "controls",
+            "operation": "insert_front",
+            "value": {
+               "url_image_renderer": {
+                  "type": "custom",
+                  "renderer": "profile_image_renderer",
+                  "size": [
+                     32,
+                     32
+                  ],
+                  "bindings": [
+                     {
+                        "binding_type": "view",
+                        "source_control_name": "image",
+                        "resolve_sibling_scope": true,
+                        "source_property_name": "('{\"type\":7,\"url\":\"' + #texture + '\"}')",
+                        "target_property_name": "#profile_image_options"
+                     }
+                  ]
+               }
+            }
+         }
+      ]
+   },
+   "dynamic_button/panel_name/image": {
+      "modifications": [
+         {
+            "array_name": "bindings",
+            "operation": "replace",
+            "where": {
+               "binding_type": "view",
+               "source_property_name": "(not ((#texture = '') or (#texture = 'loading')))",
+               "target_property_name": "#visible"
+            },
+            "value": {
+               "binding_type": "view",
+               "source_property_name": "(not ((#texture = '') or (#texture = 'loading') or ('%.4s' * #texture = 'http')))",
+               "target_property_name": "#visible"
+            }
+         }
+      ]
+   }
+}
